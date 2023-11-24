@@ -15,6 +15,39 @@ Welcome to the Sai I Lama Enterprise repository, showcasing a series of applicat
 6. **E-commerce Platform**
 7. **Learning Management System (LMS)**
 8. **Internet**
+## Applications
+
+### 1. Stock and Approvision App
+[ERP_OS_Frontend](https://github.com/sai-i-lama/ERP_OS_Frontend)
+Description: This application manages inventory, stock levels, and procurement processes for cosmetic products.
+
+### 2. Gestion des Soins
+[Gestion des Soins](https://github.com/menoc61/gestion-des-soin-laravel)
+Description: Gestion des Soins is a system dedicated to handling and tracking cosmetic treatments and services offered.
+
+### 3. Human Resource Management System (HRMS)
+[HRM_OS_Frontend](https://github.com/sai-i-lama/HRM_OS_Frontend)
+Description: HRMS streamlines employee management, payroll, and HR-related operations within the enterprise.
+
+### 4. Enterprise Resource Planning (ERP)
+[ERP_OS_Frontend](https://github.com/sai-i-lama/ERP_OS_Frontend)
+Description: ERP integrates various business processes like finance, sales, and production to enhance overall efficiency.
+
+### 5. Quizz Online Exam App
+[Link to Repository](https://github.com/sai-i-lama/sai_exam)
+Description: An application facilitating online quizzes and exams for training and assessment purposes.
+
+### 6. E-commerce Platform
+[Link to Repository](link-to-repo)
+Description: This platform enables online sales and transactions for cosmetic products.
+
+### 7. Learning Management System (LMS)
+[Link to Repository](link-to-repo)
+Description: LMS provides a platform for training, courses, and educational resources.
+
+### 8. Internet
+[Link to Repository](link-to-repo)
+Description: Internet Generator is a tool for generating internet-based resources tailored for cosmetic and aesthetic content.
 
 ## Tech Stack
 
