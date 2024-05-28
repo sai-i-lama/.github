@@ -1,0 +1,42 @@
+cloud-architecture-diagram
+
+// Title and Nodes
+title Microservice-Based System Overview
+
+ERP Service [color: blue, icon: tool] {
+  ERP Frontend [icon: react]
+  ERP Backend [icon: nodejs, label: "ERP Backend"] // entry point
+  ERP Database [icon: postgresql, label: "erp"]
+}
+
+HRM Service [color: green, icon: users] {
+  HRM Frontend [icon: react]
+  HRM Backend [icon: nodejs, label: "HRM Backend"] // entry point
+  HRM Database [icon: postgresql, label: "hrm"]
+}
+
+PMS Service [color: red, icon: heart] {
+  PMS Backend [icon: laravel] // entry point
+  PMS Database [icon: postgresql, label: "laravel"]
+}
+
+ Syncronizer{
+Message Broker [icon: RabbitMQ]
+Message Broker alternative [icon: kafka]
+ }
+
+// Connections
+ERP Frontend > ERP Backend
+ERP Backend > ERP Database
+HRM Frontend > HRM Backend
+HRM Backend > HRM Database
+PMS Backend > PMS Database
+
+// Message broker connections
+ERP Backend <> Message Broker: subscribe/publish user.created
+HRM Backend <> Message Broker: subscribe/publish user.created
+PMS Backend <> Message Broker: subscribe/publish user.created
+
+// Special case handling
+PMS Backend > ERP Backend: publish user of type host to customer table
+

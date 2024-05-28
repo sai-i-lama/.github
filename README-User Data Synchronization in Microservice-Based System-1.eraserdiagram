@@ -1,0 +1,54 @@
+sequence-diagram
+
+title User Data Synchronization in Microservice-Based System
+
+// Actors
+HRM [icon: monitor, color: blue]
+ERP [icon: server, color: green]
+PMS [icon: database, color: red]
+MessageBroker [icon: cloud, color: orange]
+
+// User Creation in HRM
+HRM > MessageBroker: Publish user.created message
+activate HRM
+MessageBroker > ERP: Notify new user
+MessageBroker > PMS: Notify new user
+deactivate HRM
+
+par [label: Update Databases] {
+  ERP > ERP: Add user to ERP database
+  and {
+    PMS > PMS: Add user to PMS database
+  }
+}
+
+// User Creation in ERP
+ERP > MessageBroker: Publish user.created message
+activate ERP
+MessageBroker > HRM: Notify new user
+deactivate ERP
+
+opt [label: Update HRM Database] {
+  HRM > HRM: Add user to HRM database
+}
+
+// User Creation in PMS
+PMS > MessageBroker: Publish user.created message
+activate PMS
+MessageBroker > HRM: Notify new user
+deactivate PMS
+
+opt [label: Update HRM Database] {
+  HRM > HRM: Add user to HRM database
+}
+
+// Special Case Handling (PMS to ERP)
+PMS > MessageBroker: Publish user.created (type: host) message
+activate PMS
+MessageBroker > ERP: Notify new host user
+deactivate PMS
+
+opt [label: Add to ERP Customer Table] {
+  ERP > ERP: Add user to customer table
+}
+
