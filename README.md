@@ -46,7 +46,8 @@ PMS Backend <> Message Broker: subscribe/publish user.created
 // Special case handling
 PMS Backend > ERP Backend: publish user of type host to customer table
 ```
-it looks like : 
+## Diagrams
+The diagrams for the app cloud architecture are as follow: 
 
 ![cloud arch.png](/.eraser/6A0H5vU8C2KxQO3MMKGe___zP77iWJowZaHU8vz46YnpVCw3sT2___MMguNGhPmr3PHo-InZyOE.png "cloud arch.png")
 
@@ -56,10 +57,10 @@ You can get a view on the project link at [﻿View on canvas](https://app.eraser
 
 
 <!-- eraser-additional-content -->
-## Diagrams
-<!-- eraser-additional-files -->
+
+<!-- eraser-additional-files --
 <a href="/README-User Data Synchronization in Microservice-Based System-1.eraserdiagram" data-element-id="A7OhIStffAweH5_4ohAkJ"><img src="/.eraser/6A0H5vU8C2KxQO3MMKGe___zP77iWJowZaHU8vz46YnpVCw3sT2___---diagram----0593dd465fd0d1692f646f9a6d5b06dc-User-Data-Synchronization-in-Microservice-Based-System.png" alt="" data-element-id="A7OhIStffAweH5_4ohAkJ" /></a>
 <a href="/README-Microservice-Based System Overview-2.eraserdiagram" data-element-id="GHjEBQmIXW3A5wt6s7X36"><img src="/.eraser/6A0H5vU8C2KxQO3MMKGe___zP77iWJowZaHU8vz46YnpVCw3sT2___---diagram----770dede005fc132d018dae8cd4d117f2-Microservice-Based-System-Overview.png" alt="" data-element-id="GHjEBQmIXW3A5wt6s7X36" /></a>
-<!-- end-eraser-additional-files -->
+ end-eraser-additional-files -->
 <!-- end-eraser-additional-content -->
 <!--- Eraser file: https://app.eraser.io/workspace/6A0H5vU8C2KxQO3MMKGe --->
