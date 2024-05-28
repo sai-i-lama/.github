@@ -1,9 +1,11 @@
-
 ![Logo](https://saiilama.com/wp-content/uploads/2018/11/sai-i-lama-logo.png)
 
 [![Version](https://img.shields.io/badge/Version-1-<COLOR>.svg?style=for-the-badge)](https://github.com/your/repository/link/to/releases/tag/v1.0)
 
 # Sai I Lama Enterprise - Cosmetics & Aesthetics Automation Suite
+
+> see the archietectural diagram .[View diagram ](https://github.com/sai-i-lama/.github/blob/main/README.md)
+
 ## Overview
 Welcome to the Sai I Lama Enterprise repository, showcasing a series of applications designed to automate and manage different tasks and jobs within the cosmetics and aesthetics domain. This repository contains the source code, documentation, and resources for the following applications:
 
